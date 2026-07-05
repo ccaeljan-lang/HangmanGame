@@ -1,16 +1,18 @@
 package ph.edu.dlsu.lbycpob.hangman.game;
 
+import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman implements HangmanGame{
-    Random random;
-    HangmanRenderer renderer;
-    Scanner scanner;
-    String LETTER_ONLY_PATTERN;
-    String[] DEFAULT_WORDS;
-    int MAX_GUESSES;
-    WordRepository wordRepository;
+    private Random random;
+    private HangmanRenderer renderer;
+    private Scanner scanner;
+    private String LETTER_ONLY_PATTERN;
+    private String[] DEFAULT_WORDS;
+    public int MAX_GUESSES;
+    private WordRepository wordRepository;
 
     @Override
     public String createHint(String secretWord, String guessedLetters) {
@@ -27,7 +29,8 @@ public class Hangman implements HangmanGame{
 
     }
 
-    public boolean readYesNo(String guessedLetters) {
+    // OPTIONAL METHODS
+    private boolean readYesNo(String guessedLetters) {
         return true;
     }
 
