@@ -1,6 +1,7 @@
 package ph.edu.dlsu.lbycpob.hangman.game;
 
 import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
+import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created Hangman class that implements HangmanGame interface. Added the methods with the own implementation still blank.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/render/AsciiArtRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/render/HangmanRenderer.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/WordRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/utils/ClasspathResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/utils/ClasspathResources.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -80,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="3988000" />
+      <workItem from="1783231937424" duration="5187000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -130,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783235429042</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created HangmanRenderer interface that disyaplays the current structure of the hangman. Changed acces modifiers fo dat fields and some methods in the Hangaman class.">
+      <option name="closed" value="true" />
+      <created>1783236074557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783236074557</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses.">
+      <option name="closed" value="true" />
+      <created>1783236607700</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783236607700</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +159,8 @@
     <MESSAGE value="Created HangmanGame Interface that does the functions of playing a game like presenting intro, reading guess, or playing another game." />
     <MESSAGE value="Created ClasspathResources class that is used to read the ASCII art and words from the text files." />
     <MESSAGE value="Created Hangman class that implements HangmanGame interface. Added the methods with the own implementation still blank." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Hangman class that implements HangmanGame interface. Added the methods with the own implementation still blank." />
+    <MESSAGE value="Created HangmanRenderer interface that disyaplays the current structure of the hangman. Changed acces modifiers fo dat fields and some methods in the Hangaman class." />
+    <MESSAGE value="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses." />
   </component>
 </project>
