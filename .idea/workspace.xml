@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created WordRepository interface that gets random word from the wor text file. Imported this onto the Hangman class as it uses this interface.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/FileWordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/utils/ClasspathResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/utils/ClasspathResources.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/ClasspathWordRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="6260000" />
+      <workItem from="1783231937424" duration="7616000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -156,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783237296091</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources.">
+      <option name="closed" value="true" />
+      <created>1783238667162</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1783238667162</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +177,7 @@
     <MESSAGE value="Created HangmanRenderer interface that disyaplays the current structure of the hangman. Changed acces modifiers fo dat fields and some methods in the Hangaman class." />
     <MESSAGE value="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses." />
     <MESSAGE value="Created WordRepository interface that gets random word from the wor text file. Imported this onto the Hangman class as it uses this interface." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created WordRepository interface that gets random word from the wor text file. Imported this onto the Hangman class as it uses this interface." />
+    <MESSAGE value="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources." />
   </component>
 </project>
