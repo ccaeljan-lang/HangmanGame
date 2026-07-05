@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Added packages for each responsibility and a main class for program run.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/HangmanGame.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created ClasspathResources class that is used to read the ASCII art and words from the text files.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/HangmanGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="1780000" />
+      <workItem from="1783231937424" duration="3425000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -104,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783233305417</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created HangmanGame Interface that does the functions of playing a game like presenting intro, reading guess, or playing another game.">
+      <option name="closed" value="true" />
+      <created>1783233787351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783233787351</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created ClasspathResources class that is used to read the ASCII art and words from the text files.">
+      <option name="closed" value="true" />
+      <created>1783234228158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783234228159</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +132,8 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added hangman resources to the resources directory." />
     <MESSAGE value="Added packages for each responsibility and a main class for program run." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added packages for each responsibility and a main class for program run." />
+    <MESSAGE value="Created HangmanGame Interface that does the functions of playing a game like presenting intro, reading guess, or playing another game." />
+    <MESSAGE value="Created ClasspathResources class that is used to read the ASCII art and words from the text files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created ClasspathResources class that is used to read the ASCII art and words from the text files." />
   </component>
 </project>
