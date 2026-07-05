@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Initial commit.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/large.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/words.txt" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Added packages for each responsibility and a main class for program run.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/HangmanGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="1104000" />
+      <workItem from="1783231937424" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -92,7 +88,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783232428536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added hangman resources to the resources directory.">
+      <option name="closed" value="true" />
+      <created>1783233061661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783233061661</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added packages for each responsibility and a main class for program run.">
+      <option name="closed" value="true" />
+      <created>1783233305417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783233305417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Added hangman resources to the resources directory." />
+    <MESSAGE value="Added packages for each responsibility and a main class for program run." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added packages for each responsibility and a main class for program run." />
   </component>
 </project>
