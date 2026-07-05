@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Initial commit.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art/display8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/large.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game-assests/words/words.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ccaeljan-lang"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ccaeljan-lang/HangmanGame.git",
+    "accountId": "d71a8fb5-f330-4d6c-b7c5-d21ec25ed192"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -27,16 +49,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/caeljandcristobal/Desktop/DLSU/1ST YEAR/TERM3/LBYCPOB/MODULE 4/HangmanGame/src/main/resources",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/game-assests" />
+      <recent name="$PROJECT_DIR$/src/main/resources/game-assests/game-assests/hangman-art" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/game-assests/words" />
+      <recent name="$PROJECT_DIR$/src/main/resources/game-assests/hangman-art" />
+      <recent name="$PROJECT_DIR$/src/main/resources/game-assests/Hangman_ASCII_Assets/hangman-art" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="" />
@@ -44,11 +82,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="1000" />
+      <workItem from="1783231937424" duration="1104000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <option name="closed" value="true" />
+      <created>1783232428536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783232428536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
 </project>
