@@ -1,7 +1,7 @@
 package ph.edu.dlsu.lbycpob.hangman.utils;
 
 import ph.edu.dlsu.lbycpob.hangman.render.AsciiArtRenderer;
-import ph.edu.dlsu.lbycpob.hangman.repository.ClasspathWordRepository;
+import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.Objects;
  * sitting on the user's filesystem.
  *
  * <p>Both {@link AsciiArtRenderer} (hangman pictures) and
- * {@link ClasspathWordRepository} (the built-in word lists) need this exact
+ * {@link WordRepository} (the built-in word lists) need this exact
  * same handful of lines of low-level I/O code, so it lives here once
  * instead of being copy-pasted into both classes. This is Single
  * Responsibility at work: "how do I read a bundled text resource" is its
