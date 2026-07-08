@@ -43,7 +43,17 @@ public class Hangman implements HangmanGame{
 
     @Override
     public void stats(int gamesCount, int gamesWon, int best) {
+        double winPercent = (gamesWon * 100.0) / gamesCount;
 
+               IO.println();
+               IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+               IO.println("            Overall statistics:");
+               IO.println("              Games played: " + gamesCount);
+               IO.println("               Games won: " + gamesWon);
+        System.out.printf("             Win percent: %.2f%%%n", winPercent);
+               IO.println("Best game: " + best + " guess(es) remaining");
+               IO.println("           Thanks for playing!!!");
+               IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
     }
 
     @Override
