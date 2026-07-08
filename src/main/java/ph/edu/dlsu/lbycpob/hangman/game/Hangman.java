@@ -19,7 +19,24 @@ public class Hangman implements HangmanGame{
 
     @Override
     public String createHint(String secretWord, String guessedLetters) {
-        return "";
+        // Initialize string builder
+        StringBuilder hint = new StringBuilder();
+
+        // [UNDERSTAND] goes through each secret word letters.
+        // checks if letter is in the guessed letter,
+        // if it is then appends with "-" otherwise the actual letter.
+        // RESULT: replaces the hint variable with the appended characters.
+        for (int i = 0; i < secretWord.length(); i++) {
+            char letter = secretWord.charAt(i);
+            if (guessedLetters.indexOf(letter) >= 0) {
+                hint.append(letter);
+            }
+            else {
+                hint.append("-");
+            }
+        }
+        // [UNDERSTAND] Returns the hint word.
+        return hint.toString();
     }
 
     @Override
@@ -50,7 +67,27 @@ public class Hangman implements HangmanGame{
 
     @Override
     public char readGuess(String guessedLetters) {
-        return '\0';
+        // [DECISION] Used a while loop to repeat process of inputting character guesses.
+        // [UNDERSTAND] Inside it, asks user to input their guesses.
+        // Checks if guesses are a single letter or if you have already guessed it.
+        // Returns the character guess to "append" it or add it to the guesses list.
+        while (true) {
+            IO.readln("Your guess? ");
+            String input = scanner.nextLine().trim().toUpperCase();
+
+            if (input.length() != 1 || input.matches(LETTER_ONLY_PATTERN)) {
+                IO.println("Type a single letter from A-Z.");
+                continue;
+            }
+
+            char guess = input.charAt(0);
+
+            if (guessedLetters.indexOf(guess) != -1) {
+                IO.println("You already guessed that letter.");
+                continue;
+            }
+            return guess;
+        }
     }
 
     @Override
