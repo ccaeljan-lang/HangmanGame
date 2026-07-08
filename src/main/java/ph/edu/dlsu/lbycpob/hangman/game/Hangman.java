@@ -4,8 +4,11 @@ import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
 import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 import ph.edu.dlsu.lbycpob.hangman.statistics.GameStatistics;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
@@ -70,22 +73,27 @@ public class Hangman implements HangmanGame{
     }
 
     // SAVE STATISTICS IN TEXT FILE METHOD
-    // [UNDERSTAND] Uses pint writer utilities to write it in a file,
+    // [UNDERSTAND] Uses PrintWriter utilities to write it in a file,
     private void saveStatistics(int gamesCount, int gamesWon, int best) {
         // [UNDERSTAND] Calculates the win percentage of a user.
         double winPercent = (gamesWon * 100.0) / gamesCount;
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
         // [UNDERSTAND] Uses try-catch for error handling.
         // If successful it prints it in a file.
-        try (PrintWriter writer = new PrintWriter("StatisticsReport.txt")) {
-            writer.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            writer.println("            Overall statistics:");
-            writer.println("              Games played: " + gamesCount);
-            writer.println("               Games won: " + gamesWon);
-             writer.printf("             Win percent: %.2f%%%n", winPercent);
-            writer.println("     Best game: " + best + " guess(es) remaining");
-            writer.println("           Thanks for playing!!!");
-            writer.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        // [AI-CHECK] AI recommended this format for file writing.
+        try (PrintWriter writer = new PrintWriter(new FileWriter("hangman_statistics.txt", true))) {
+            writer.println("========================================");
+            writer.println("Hangman Game Session - " + LocalDateTime.now().format(formatter));
+            writer.println("========================================");
+            writer.println("Total Games Played:\t" + gamesCount);
+            writer.println("Games Won:\t\t" + gamesWon);
+            writer.println("Games Lost:\t\t" + (gamesCount - gamesWon));
+            writer.printf("Win Percentage:\t\t%.1f%%%n", winPercent);
+            writer.println("Best Score:\t\t" + best + " guess(es) remaining");
+            writer.println("========================================");
+            writer.println();
         } catch (IOException e) {
             IO.println("Unable to save statistics report.");
         }
