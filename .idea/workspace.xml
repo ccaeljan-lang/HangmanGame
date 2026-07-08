@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Updated FileWordRepository by implementing the getRandomWord method.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/Main.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Updated the run method of the Hangman class by implementing it as the main controller of the game. Imported the GameStatistics class as it is used for verifying if the player has won and for display of stats. Changed how the intro display looks like. Changed parameter of readYesNo.">
       <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,7 @@
       <updated>1783231936305</updated>
       <workItem from="1783231937424" duration="8947000" />
       <workItem from="1783306885287" duration="735000" />
-      <workItem from="1783443097047" duration="18515000" />
+      <workItem from="1783443097047" duration="19633000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -310,14 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1783508529987</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Updated the run method of the Hangman class by implementing it as the main controller of the game. Imported the GameStatistics class as it is used for verifying if the player has won and for display of stats. Changed how the intro display looks like. Changed parameter of readYesNo.">
+      <option name="closed" value="true" />
+      <created>1783509816826</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1783509816826</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created HangmanGame Interface that does the functions of playing a game like presenting intro, reading guess, or playing another game." />
     <MESSAGE value="Created ClasspathResources class that is used to read the ASCII art and words from the text files." />
     <MESSAGE value="Created Hangman class that implements HangmanGame interface. Added the methods with the own implementation still blank." />
     <MESSAGE value="Created HangmanRenderer interface that disyaplays the current structure of the hangman. Changed acces modifiers fo dat fields and some methods in the Hangaman class." />
@@ -342,6 +348,7 @@
     <MESSAGE value="Updated Hangman class by revising the DEFAULT_WORDS variables array list as a fall back for the game, imported objects utilities into the class, implemented the getRandWord method to get words randomly from the word text file or the DEFAULT_WORDS, and updated the comments of the whole class." />
     <MESSAGE value="Updated FileWordRepository and changed the constructor and imported ultilities in it." />
     <MESSAGE value="Updated FileWordRepository by implementing the getRandomWord method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated FileWordRepository by implementing the getRandomWord method." />
+    <MESSAGE value="Updated the run method of the Hangman class by implementing it as the main controller of the game. Imported the GameStatistics class as it is used for verifying if the player has won and for display of stats. Changed how the intro display looks like. Changed parameter of readYesNo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the run method of the Hangman class by implementing it as the main controller of the game. Imported the GameStatistics class as it is used for verifying if the player has won and for display of stats. Changed how the intro display looks like. Changed parameter of readYesNo." />
   </component>
 </project>

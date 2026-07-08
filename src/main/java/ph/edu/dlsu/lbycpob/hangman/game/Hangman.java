@@ -77,9 +77,21 @@ public class Hangman implements HangmanGame{
         stats(statistics.gamesPlayed(), statistics.gamesWon(), statistics.bestGuessesRemaining());
     }
 
-    // OPTIONAL METHOD
+    // YES NO VALIDATION METHOD
     private boolean readYesNo(String prompt) {
-        return true;
+        // [DECISION] Used a while loop to repeatedly ask the user
+        // if they want to play another game.
+        while (true) {
+            IO.print(prompt);
+            String input = scanner.nextLine().trim().toUpperCase();
+            if (input.equals("Y")) {
+                return true;
+            }
+            if (input.equals("N")) {
+                return false;
+            }
+            IO.println("Please enter Y or N.");
+        }
     }
 
     // INTRO DISPLAY METHOD
