@@ -92,7 +92,44 @@ public class Hangman implements HangmanGame{
 
     @Override
     public int playOneGame(String secretWord) {
-        return 0;
+        // [UNDERSTAND] Initializes the number of guesses and guessed letters.
+        int guessesLeft = MAX_GUESSES;
+        String guessedLetters = "";
+
+        // [UNDERSTAND] While loop that repeats process
+        // until guesses becomes zero or until guessed correctly
+        while (guessesLeft > 0 && !createHint(secretWord, guessedLetters).equals(secretWord)) {
+            IO.println("Secret word: " + createHint(secretWord, guessedLetters));
+            IO.println("Your guesses: " + guessedLetters);
+            IO.println("Guesses left: " + guessesLeft);
+
+            // [UNDERSTAND] Guess letters are appended on the guessed letters list if new.
+            char guess = readGuess(guessedLetters);
+            guessedLetters += guess;
+
+            // [UNDERSTAND] Checks if guess letter is in the secret word.
+            if (secretWord.indexOf(guess) >= 0) {
+                System.out.println("Correct!");
+            }
+            else {
+                System.out.println("Incorrect.");
+                guessesLeft--;
+            }
+
+            // Reduces guess number.
+            guessesLeft--;
+        }
+
+        // [UNDERSTAND] Displays output depending if hint is already equal to the secret word (if correct).
+        if (createHint(secretWord, guessedLetters).equals(secretWord)) {
+            System.out.println("You win! My word was \"" + secretWord + "\".");
+        }
+        else {
+            System.out.println("You lose! My word was \"" + secretWord + "\".");
+        }
+
+        // Returns number of guesses.
+        return guessesLeft;
     }
 
     @Override
