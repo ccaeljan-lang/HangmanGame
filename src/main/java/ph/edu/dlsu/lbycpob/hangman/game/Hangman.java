@@ -88,10 +88,10 @@ public class Hangman implements HangmanGame{
             writer.println("Hangman Game Session - " + LocalDateTime.now().format(formatter));
             writer.println("========================================");
             writer.println("Total Games Played:\t" + gamesCount);
-            writer.println("Games Won:\t\t" + gamesWon);
-            writer.println("Games Lost:\t\t" + (gamesCount - gamesWon));
+            writer.println("Games Won:\t\t\t" + gamesWon);
+            writer.println("Games Lost:\t\t\t" + (gamesCount - gamesWon));
             writer.printf("Win Percentage:\t\t%.1f%%%n", winPercent);
-            writer.println("Best Score:\t\t" + best + " guess(es) remaining");
+            writer.println("Best Score:\t\t\t" + best + " guess(es) remaining");
             writer.println("========================================");
             writer.println();
         } catch (IOException e) {
