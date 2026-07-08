@@ -4,6 +4,7 @@ import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
 import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,10 +13,11 @@ public class Hangman implements HangmanGame{
     private HangmanRenderer renderer;
     private Scanner scanner;
     private static final String LETTER_ONLY_PATTERN = "[A-Z]";
-    private static final String[] DEFAULT_WORDS = {"PROGRAMMER"};
+    private static final String[] DEFAULT_WORDS = {"PROGRAMMER", "JAVA", "HANGMAN", "COMPUTER", "KEYBOARD", "PROGRAM", "ALGORITHM"};
     public static final int MAX_GUESSES = 8;
     private WordRepository wordRepository;
 
+    // CREATE HINT METHOD
     @Override
     public String createHint(String secretWord, String guessedLetters) {
         // Initialize string builder.
@@ -48,11 +50,12 @@ public class Hangman implements HangmanGame{
         playOneGame("PROGRAMMER");
     }
 
-    // OPTIONAL METHODS
+    // OPTIONAL METHOD
     private boolean readYesNo(String guessedLetters) {
         return true;
     }
 
+    // INTRO DISPLAY METHOD
     @Override
     public void intro() {
         IO.println("               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
@@ -64,6 +67,7 @@ public class Hangman implements HangmanGame{
                    "               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
     }
 
+    // READ GUESS METHOD
     @Override
     public char readGuess(String guessedLetters) {
         // [DECISION] Used a while loop to repeat process of inputting character guesses.
@@ -89,6 +93,7 @@ public class Hangman implements HangmanGame{
         }
     }
 
+    // PLAY GAME METHOD
     @Override
     public int playOneGame(String secretWord) {
         // [UNDERSTAND] Initializes the number of guesses and guessed letters.
@@ -132,11 +137,31 @@ public class Hangman implements HangmanGame{
         return guessesLeft;
     }
 
+    // GET RANDOM WORD METHOD
     @Override
     public String getRandomWord(String filename) {
-        return "";
+        // [UNDERSTAND] Checks if no filename is passed.
+        Objects.requireNonNull(filename, "filename must not be null");
+        if (filename.isBlank()) {
+            throw new IllegalArgumentException("filename must not be blank");
+        }
+
+        // [UNDERSTAND] Gets random word from a file,
+        // and if not uses the default words initialized.
+        try {
+            return wordRepository.getRandomWord(filename);
+        } catch (IOException e) {
+            // Recovery: a missing/empty/unreadable word file should not
+            // crash the whole program. Tell the player clearly (using the
+            // exception's own message - no custom exception type needed),
+            // then fall back to a small built-in word list.
+            IO.println("Could not load words from \"" + filename + "\": " + e.getMessage());
+            IO.println("Using a built-in default word instead.");
+            return DEFAULT_WORDS[random.nextInt(DEFAULT_WORDS.length)];
+        }
     }
 
+    // DISPLAY HANGMAN ASCII ART METHOD
     @Override
     public void displayHangman(int guessCount) {
         // [UNDERSTAND] Checks if the guess count is within the valid range.

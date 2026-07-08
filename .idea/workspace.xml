@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Added displayHangman call to the playOneGame method.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/WordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/WordRepository.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Added comments to the getRandomWord method and data fields declared.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <updated>1783231936305</updated>
       <workItem from="1783231937424" duration="8947000" />
       <workItem from="1783306885287" duration="735000" />
-      <workItem from="1783443097047" duration="13818000" />
+      <workItem from="1783443097047" duration="15191000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -261,7 +262,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783500912043</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Updated WordRepository to include IOException.">
+      <option name="closed" value="true" />
+      <created>1783501598547</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1783501598547</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated it in connection to the manual.">
+      <option name="closed" value="true" />
+      <created>1783501817100</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1783501817100</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added comments to the getRandomWord method and data fields declared.">
+      <option name="closed" value="true" />
+      <created>1783502274152</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1783502274152</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +315,9 @@
     <MESSAGE value="Changes made in correspondence to the manual for the HangmanRenderer interface." />
     <MESSAGE value="Revised AsciiArtRenderer by making the constants final and static with values, and implementing the render method with a validity checker and a for loop to display each lines." />
     <MESSAGE value="Added displayHangman call to the playOneGame method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added displayHangman call to the playOneGame method." />
+    <MESSAGE value="Updated WordRepository to include IOException." />
+    <MESSAGE value="Updated it in connection to the manual." />
+    <MESSAGE value="Added comments to the getRandomWord method and data fields declared." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to the getRandomWord method and data fields declared." />
   </component>
 </project>
