@@ -158,7 +158,7 @@ public class Hangman implements HangmanGame{
                    "      Every time you guess a letter that isn't in my word,\n" +
                    "          a new body part of the hanging man appears.\n" +
                    "                         Good luck!!!\n" +
-                   "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\\n");
+                   "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
     }
 
     // READ GUESS METHOD
