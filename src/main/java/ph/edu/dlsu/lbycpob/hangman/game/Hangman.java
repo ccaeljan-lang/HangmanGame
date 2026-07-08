@@ -213,6 +213,7 @@ public class Hangman implements HangmanGame{
             System.out.println("You win! My word was \"" + secretWord + "\".");
         }
         else {
+            displayHangman(0);
             System.out.println("You lose! My word was \"" + secretWord + "\".");
         }
 
