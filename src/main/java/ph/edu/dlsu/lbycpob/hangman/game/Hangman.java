@@ -2,6 +2,7 @@ package ph.edu.dlsu.lbycpob.hangman.game;
 
 import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
 import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
+import ph.edu.dlsu.lbycpob.hangman.statistics.GameStatistics;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -47,24 +48,50 @@ public class Hangman implements HangmanGame{
 
     @Override
     public void run() {
-        playOneGame("PROGRAMMER");
+        // [UNDERSTAND] Displays intro.
+        intro();
+
+        // [UNDERSTAND] Gets path of the file.
+        IO.println("Dictionary file? ");
+        String filename = scanner.nextLine();
+
+        // [UNDERSTAND] Initializes statistics object.
+        GameStatistics statistics = GameStatistics.empty();
+
+        // [UNDERSTAND] Initializes the playAgain user choice variable.
+        // Controls the whole game using do-while loop.
+        // Calls other method like playOneGame to run the whole game.
+        // Verifies if player wins or not.
+        // Asks user if they want to play again.
+        boolean playAgain;
+        do {
+            String secretWord = getRandomWord(filename);
+            int guessesRemaining = playOneGame(secretWord);
+            boolean won = guessesRemaining > 0;
+            statistics = statistics.withGame(won, guessesRemaining);
+            playAgain = readYesNo("Play again? (Y/N): ");
+        } while (playAgain);
+
+        // [UNDERSTAND] Calls stats method to display the statistic of player in a single run
+        // for multiple games.
+        stats(statistics.gamesPlayed(), statistics.gamesWon(), statistics.bestGuessesRemaining());
     }
 
     // OPTIONAL METHOD
-    private boolean readYesNo(String guessedLetters) {
+    private boolean readYesNo(String prompt) {
         return true;
     }
 
     // INTRO DISPLAY METHOD
     @Override
     public void intro() {
-        IO.println("               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+        IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                    "                      Welcome to Hangman!\n" +
                    "I will think of a random word while you try to guess its letters.\n" +
                    "      Every time you guess a letter that isn't in my word,\n" +
                    "          a new body part of the hanging man appears.\n" +
                    "                         Good luck!!!\n" +
-                   "               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+                   "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\\n");
     }
 
     // READ GUESS METHOD
