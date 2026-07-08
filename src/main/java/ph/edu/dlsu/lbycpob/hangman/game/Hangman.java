@@ -98,7 +98,7 @@ public class Hangman implements HangmanGame{
         intro();
 
         // [UNDERSTAND] Gets path of the file.
-        IO.println("Dictionary file? ");
+        IO.print("Enter the word list filename (test.txt, words.txt, large.txt: ");
         String filename = scanner.nextLine();
 
         // [UNDERSTAND] Initializes statistics object.
