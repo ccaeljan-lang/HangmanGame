@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Previous commit changes were deleted for readGuess() method, but it is already implemented before it. Created and implemented playOneGame method. Using a while loop to repeat process of guessing and to checks if guess word is already correct.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/render/HangmanRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/render/HangmanRenderer.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Added displayHangman call to the playOneGame method.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/WordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/WordRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <updated>1783231936305</updated>
       <workItem from="1783231937424" duration="8947000" />
       <workItem from="1783306885287" duration="735000" />
-      <workItem from="1783443097047" duration="11207000" />
+      <workItem from="1783443097047" duration="13818000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -230,7 +229,39 @@
       <option name="project" value="LOCAL" />
       <updated>1783495130677</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implemented the displayHangman method from the manual that displays the hangman ascii in correspondence to the guess count remaining. Implemented also a throw exception to the HangmanRender interface as it deals with reading with text files.">
+      <option name="closed" value="true" />
+      <created>1783496033343</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1783496033343</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changes made in correspondence to the manual for the HangmanRenderer interface.">
+      <option name="closed" value="true" />
+      <created>1783496226230</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1783496226230</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Revised AsciiArtRenderer by making the constants final and static with values, and implementing the render method with a validity checker and a for loop to display each lines.">
+      <option name="closed" value="true" />
+      <created>1783500692869</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1783500692869</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added displayHangman call to the playOneGame method.">
+      <option name="closed" value="true" />
+      <created>1783500912042</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1783500912043</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +286,10 @@
     <MESSAGE value="Created and implemented toString() method. Using a for loop, goes through each secret word and checks if character is the same as guessed letter. Puts the appended characters to the variable hint." />
     <MESSAGE value="Created and implemented createHint() method. Using a for loop, goes through each secret word and checks if character is the same as guessed letter. Puts the appended characters to the variable hint." />
     <MESSAGE value="Previous commit changes were deleted for readGuess() method, but it is already implemented before it. Created and implemented playOneGame method. Using a while loop to repeat process of guessing and to checks if guess word is already correct." />
-    <option name="LAST_COMMIT_MESSAGE" value="Previous commit changes were deleted for readGuess() method, but it is already implemented before it. Created and implemented playOneGame method. Using a while loop to repeat process of guessing and to checks if guess word is already correct." />
+    <MESSAGE value="Implemented the displayHangman method from the manual that displays the hangman ascii in correspondence to the guess count remaining. Implemented also a throw exception to the HangmanRender interface as it deals with reading with text files." />
+    <MESSAGE value="Changes made in correspondence to the manual for the HangmanRenderer interface." />
+    <MESSAGE value="Revised AsciiArtRenderer by making the constants final and static with values, and implementing the render method with a validity checker and a for loop to display each lines." />
+    <MESSAGE value="Added displayHangman call to the playOneGame method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added displayHangman call to the playOneGame method." />
   </component>
 </project>
