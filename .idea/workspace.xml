@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/repository/ClasspathWordRepository.java" afterDir="false" />
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Finished GameStatistics enum.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,49 +18,51 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ccaeljan-lang"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ccaeljan-lang&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ccaeljan-lang/HangmanGame.git",
-    "accountId": "d71a8fb5-f330-4d6c-b7c5-d21ec25ed192"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ccaeljan-lang/HangmanGame.git&quot;,
+    &quot;accountId&quot;: &quot;d71a8fb5-f330-4d6c-b7c5-d21ec25ed192&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3G4XhjjDSTPhhgKtBMgviDtjp8S" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/caeljandcristobal/Desktop/DLSU/1ST YEAR/TERM3/LBYCPOB/MODULE 4/HangmanGame/src/main/resources",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hangman.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/caeljandcristobal/Desktop/DLSU/1ST YEAR/TERM3/LBYCPOB/MODULE 4/HangmanGame/src/main/resources&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -79,7 +82,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783231936305</updated>
-      <workItem from="1783231937424" duration="7616000" />
+      <workItem from="1783231937424" duration="8947000" />
+      <workItem from="1783306885287" duration="735000" />
+      <workItem from="1783443097047" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -161,7 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783238667162</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created ClasspathWordRepository class that implements word repository.">
+      <option name="closed" value="true" />
+      <created>1783239941806</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1783239941806</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created GameStatistics enum that store and counts the total number of played games in a single run. Also changed the version to use the record for GameStatistics.">
+      <option name="closed" value="true" />
+      <created>1783240236939</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1783240236940</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finished GameStatistics enum.">
+      <option name="closed" value="true" />
+      <created>1783240260009</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783240260009</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +207,9 @@
     <MESSAGE value="Created AsciiArtRenderer class that implements the HangmanRenderer interface. It prints the correct ASCII picture to the console for a number of guesses." />
     <MESSAGE value="Created WordRepository interface that gets random word from the wor text file. Imported this onto the Hangman class as it uses this interface." />
     <MESSAGE value="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created FileWordRepository class that implements the WordRepository interface. This class overall gets a random word from the text file. Resolved import problems regarding packages on ClasspathResources." />
+    <MESSAGE value="Created ClasspathWordRepository class that implements word repository." />
+    <MESSAGE value="Created GameStatistics enum that store and counts the total number of played games in a single run. Also changed the version to use the record for GameStatistics." />
+    <MESSAGE value="Finished GameStatistics enum." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished GameStatistics enum." />
   </component>
 </project>

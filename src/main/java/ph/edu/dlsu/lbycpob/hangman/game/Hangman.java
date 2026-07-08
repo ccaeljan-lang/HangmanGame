@@ -15,6 +15,8 @@ public class Hangman implements HangmanGame{
     public int MAX_GUESSES;
     private WordRepository wordRepository;
 
+    public Hangman()
+
     @Override
     public String createHint(String secretWord, String guessedLetters) {
         return "";
@@ -27,7 +29,7 @@ public class Hangman implements HangmanGame{
 
     @Override
     public void run() {
-
+        playOneGame("PROGRAMMER");
     }
 
     // OPTIONAL METHODS
@@ -37,7 +39,13 @@ public class Hangman implements HangmanGame{
 
     @Override
     public void intro() {
-
+        IO.println("               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+                   "                      Welcome to Hangman!\n" +
+                   "I will think of a random word while you try to guess its letters.\n" +
+                   "      Every time you guess a letter that isn't in my word,\n" +
+                   "          a new body part of the hanging man appears.\n" +
+                   "                         Good luck!!!\n" +
+                   "               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
     }
 
     @Override
