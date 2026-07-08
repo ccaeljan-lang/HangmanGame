@@ -13,7 +13,7 @@ public class Hangman implements HangmanGame{
     private final Random random;
     private final HangmanRenderer renderer;
     private final Scanner scanner;
-    private static final String LETTER_ONLY_PATTERN = "[A-Z]";
+    private static final String LETTER_ONLY_PATTERN = "[^A-Z]";
     private static final String[] DEFAULT_WORDS = {"PROGRAMMER", "JAVA", "HANGMAN", "COMPUTER", "KEYBOARD", "PROGRAM", "ALGORITHM"};
     public static final int MAX_GUESSES = 8;
     private final WordRepository wordRepository;
