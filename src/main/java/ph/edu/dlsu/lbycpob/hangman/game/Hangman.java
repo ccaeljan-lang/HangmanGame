@@ -160,7 +160,7 @@ public class Hangman implements HangmanGame{
         // Checks if guesses are a single letter or if you have already guessed it.
         // Returns the character guess to "append" it or add it to the guesses list.
         while (true) {
-            IO.readln("Your guess? ");
+            IO.print("Your guess? ");
             String getCharacter = scanner.nextLine().trim().toUpperCase();
 
             if (getCharacter.length() != 1 || getCharacter.matches(LETTER_ONLY_PATTERN)) {
@@ -205,9 +205,6 @@ public class Hangman implements HangmanGame{
                 System.out.println("Incorrect.");
                 guessesLeft--;
             }
-
-            // Reduces guess number.
-            guessesLeft--;
         }
 
         // [UNDERSTAND] Displays output depending if hint is already equal to the secret word (if correct).
