@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Renamed game-assests to game-assets.">
+    <list default="true" id="be66fe22-59ac-4eb3-861c-21a792d02536" name="Changes" comment="Removed additional guessLeft-- in the readGuess method and then changed the prompt of guess input from readln to print.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/lbycpob/hangman/game/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <updated>1783231936305</updated>
       <workItem from="1783231937424" duration="8947000" />
       <workItem from="1783306885287" duration="735000" />
-      <workItem from="1783443097047" duration="24104000" />
+      <workItem from="1783443097047" duration="24609000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -393,14 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1783514129976</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Removed additional guessLeft-- in the readGuess method and then changed the prompt of guess input from readln to print.">
+      <option name="closed" value="true" />
+      <created>1783514655511</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1783514655512</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added intro display in the intro method." />
     <MESSAGE value="Made the constant variables final and static, initialized with a value, especially those that are used for the testing phase." />
     <MESSAGE value="Created and implemented toString() method. Using a for loop, goes through each secret word and checks if character is the same as guessed letter. Puts the appended characters to the variable hint." />
     <MESSAGE value="Created and implemented createHint() method. Using a for loop, goes through each secret word and checks if character is the same as guessed letter. Puts the appended characters to the variable hint." />
@@ -425,6 +434,7 @@
     <MESSAGE value="Changed prompt for filename. Added comments." />
     <MESSAGE value="Changed prompt and changed file path." />
     <MESSAGE value="Renamed game-assests to game-assets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed game-assests to game-assets." />
+    <MESSAGE value="Removed additional guessLeft-- in the readGuess method and then changed the prompt of guess input from readln to print." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed additional guessLeft-- in the readGuess method and then changed the prompt of guess input from readln to print." />
   </component>
 </project>
