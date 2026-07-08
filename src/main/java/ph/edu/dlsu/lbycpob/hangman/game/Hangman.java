@@ -3,6 +3,7 @@ package ph.edu.dlsu.lbycpob.hangman.game;
 import ph.edu.dlsu.lbycpob.hangman.render.HangmanRenderer;
 import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,7 +20,7 @@ public class Hangman implements HangmanGame{
 
     @Override
     public String createHint(String secretWord, String guessedLetters) {
-        // Initialize string builder
+        // Initialize string builder.
         StringBuilder hint = new StringBuilder();
 
         // [UNDERSTAND] goes through each secret word letters.
@@ -73,14 +74,14 @@ public class Hangman implements HangmanGame{
         // Returns the character guess to "append" it or add it to the guesses list.
         while (true) {
             IO.readln("Your guess? ");
-            String input = scanner.nextLine().trim().toUpperCase();
+            String getCharacter = scanner.nextLine().trim().toUpperCase();
 
-            if (input.length() != 1 || input.matches(LETTER_ONLY_PATTERN)) {
+            if (getCharacter.length() != 1 || getCharacter.matches(LETTER_ONLY_PATTERN)) {
                 IO.println("Type a single letter from A-Z.");
                 continue;
             }
 
-            char guess = input.charAt(0);
+            char guess = getCharacter.charAt(0);
 
             if (guessedLetters.indexOf(guess) != -1) {
                 IO.println("You already guessed that letter.");
@@ -139,6 +140,25 @@ public class Hangman implements HangmanGame{
 
     @Override
     public void displayHangman(int guessCount) {
+        // [UNDERSTAND] Checks if the guess count is within the valid range.
+        // Throws an exception if the guess count is invalid.
+        if (guessCount < 0 || guessCount > MAX_GUESSES) {
+            throw new IllegalArgumentException(
+                    "guessCount must be between 0 and " + MAX_GUESSES + ", got " + guessCount);
+        }
 
+        // [UNDERSTAND] Ensures the guess count is still valid after checking.
+        assert guessCount >= 0 && guessCount <= MAX_GUESSES
+                : "guessCount out of range after validation - this is a bug";
+
+        try {
+            // [UNDERSTAND] Calls the renderer to display the corresponding
+            // Hangman ASCII art based on the current guess count.
+            renderer.render(guessCount);
+
+        } catch (IOException e) {
+            // [UNDERSTAND] Catches any error while reading the ASCII art file.
+            throw new RuntimeException("Could not display the hangman picture.", e);
+        }
     }
 }
