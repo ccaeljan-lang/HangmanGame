@@ -16,8 +16,6 @@ public class Hangman implements HangmanGame{
     public static final int MAX_GUESSES = 8;
     private WordRepository wordRepository;
 
-    public Hangman()
-
     @Override
     public String createHint(String secretWord, String guessedLetters) {
         // Initialize string builder.
@@ -100,6 +98,7 @@ public class Hangman implements HangmanGame{
         // [UNDERSTAND] While loop that repeats process
         // until guesses becomes zero or until guessed correctly
         while (guessesLeft > 0 && !createHint(secretWord, guessedLetters).equals(secretWord)) {
+            displayHangman(guessesLeft);
             IO.println("Secret word: " + createHint(secretWord, guessedLetters));
             IO.println("Your guesses: " + guessedLetters);
             IO.println("Guesses left: " + guessesLeft);
@@ -155,7 +154,6 @@ public class Hangman implements HangmanGame{
             // [UNDERSTAND] Calls the renderer to display the corresponding
             // Hangman ASCII art based on the current guess count.
             renderer.render(guessCount);
-
         } catch (IOException e) {
             // [UNDERSTAND] Catches any error while reading the ASCII art file.
             throw new RuntimeException("Could not display the hangman picture.", e);
