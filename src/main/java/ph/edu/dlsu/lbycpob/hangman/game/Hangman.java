@@ -195,7 +195,7 @@ public class Hangman implements HangmanGame{
         String guessedLetters = "";
 
         // [UNDERSTAND] While loop that repeats process
-        // until guesses becomes zero or until guessed correctly
+        // until guesses becomes zero or until guessed correctly.
         while (guessesLeft > 0 && !createHint(secretWord, guessedLetters).equals(secretWord)) {
             displayHangman(guessesLeft);
             IO.println("Secret word: " + createHint(secretWord, guessedLetters));
