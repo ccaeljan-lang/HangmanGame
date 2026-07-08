@@ -18,8 +18,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // [UNDERSTAND] Initializes objects that uses file paths.
-        HangmanRenderer renderer = new AsciiArtRenderer(GAME_ASSETS_BASE_PATH + "/hangman-art");
-        WordRepository repository = new ClasspathWordRepository(GAME_ASSETS_BASE_PATH, random);
+        HangmanRenderer renderer = new AsciiArtRenderer(GAME_ASSETS_BASE_PATH + "/hangman-art/");
+        WordRepository repository = new ClasspathWordRepository(GAME_ASSETS_BASE_PATH + "/words/", random);
         // [UNDERSTAND] Initializes constructor for hangman using initialized objects.
         Hangman game = new Hangman(random, scanner, renderer, repository);
 
