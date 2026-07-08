@@ -5,6 +5,7 @@ import ph.edu.dlsu.lbycpob.hangman.repository.WordRepository;
 import ph.edu.dlsu.lbycpob.hangman.statistics.GameStatistics;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
@@ -50,10 +51,13 @@ public class Hangman implements HangmanGame{
         return hint.toString();
     }
 
+    // STATISTICS DISPLAY METHOD
     @Override
     public void stats(int gamesCount, int gamesWon, int best) {
+        // [UNDERSTAND] Calculates percentage.
         double winPercent = (gamesWon * 100.0) / gamesCount;
 
+        // [UNDERSTAND] Displays statistics.
                IO.println();
                IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
                IO.println("            Overall statistics:");
@@ -65,6 +69,29 @@ public class Hangman implements HangmanGame{
                IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
     }
 
+    // SAVE STATISTICS IN TEXT FILE METHOD
+    // [UNDERSTAND] Uses pint writer utilities to write it in a file,
+    private void saveStatistics(int gamesCount, int gamesWon, int best) {
+        // [UNDERSTAND] Calculates the win percentage of a user.
+        double winPercent = (gamesWon * 100.0) / gamesCount;
+
+        // [UNDERSTAND] Uses try-catch for error handling.
+        // If successful it prints it in a file.
+        try (PrintWriter writer = new PrintWriter("StatisticsReport.txt")) {
+            writer.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            writer.println("            Overall statistics:");
+            writer.println("              Games played: " + gamesCount);
+            writer.println("               Games won: " + gamesWon);
+             writer.printf("             Win percent: %.2f%%%n", winPercent);
+            writer.println("Best game: " + best + " guess(es) remaining");
+            writer.println("           Thanks for playing!!!");
+            writer.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        } catch (IOException e) {
+            IO.println("Unable to save statistics report.");
+        }
+    }
+
+    // GAME RUN METHOD
     @Override
     public void run() {
         // [UNDERSTAND] Displays intro.
