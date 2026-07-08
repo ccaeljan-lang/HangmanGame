@@ -64,7 +64,7 @@ public class Hangman implements HangmanGame{
                IO.println("              Games played: " + gamesCount);
                IO.println("               Games won: " + gamesWon);
         System.out.printf("             Win percent: %.2f%%%n", winPercent);
-               IO.println("Best game: " + best + " guess(es) remaining");
+               IO.println("     Best game: " + best + " guess(es) remaining");
                IO.println("           Thanks for playing!!!");
                IO.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
     }
@@ -121,7 +121,7 @@ public class Hangman implements HangmanGame{
         // [UNDERSTAND] Calls stats method to display the statistic of player in a single run
         // for multiple games.
         stats(statistics.gamesPlayed(), statistics.gamesWon(), statistics.bestGuessesRemaining());
-        saveStatistics(statistics.gamesPlayed(), statistics.gamesWon(), statistics.bestGuessesRemaining();
+        saveStatistics(statistics.gamesPlayed(), statistics.gamesWon(), statistics.bestGuessesRemaining());
     }
 
     // YES NO VALIDATION METHOD
