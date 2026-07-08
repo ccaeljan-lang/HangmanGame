@@ -10,9 +10,9 @@ public class Hangman implements HangmanGame{
     private Random random;
     private HangmanRenderer renderer;
     private Scanner scanner;
-    private String LETTER_ONLY_PATTERN;
-    private String[] DEFAULT_WORDS;
-    public int MAX_GUESSES;
+    private static final String LETTER_ONLY_PATTERN = "[A-Z]";
+    private static final String[] DEFAULT_WORDS = {"PROGRAMMER"};
+    public static final int MAX_GUESSES = 8;
     private WordRepository wordRepository;
 
     public Hangman()
